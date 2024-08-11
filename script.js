@@ -7,8 +7,9 @@ const timer = ms => new Promise(res => setTimeout(res, ms))
 
 window.onload = function() { // called when page opens
  //load mission types
- var missionTypes = localStorage.getItem("missionTypes").split(";")
+ var missionTypes = localStorage.getItem("missionTypes")
  if (missionTypes != null) {
+  missionTypes = missionTypes.split(";")
   if (missionTypes[0] == "false") { missionSelect(false) }
   if (missionTypes[1] == "false") { missionSelect(true) }
  }
