@@ -1,3 +1,14 @@
+window.onload = function() { // called when page opens
+ var missionTypes = localStorage.getItem("missionTypes").split(";")
+ if (missionTypes != null) {
+  console.log("im in it")
+  console.log(missionTypes[0])
+  if (missionTypes[0] == "false") { missionSelect(false) }
+  if (missionTypes[1] == "false") { missionSelect(true) }
+ }
+ console.log(missionTypes) 
+}
+
 function missionSelect(mType) {
  var type = "simple"
  if(mType) { type = "complex" }
@@ -11,12 +22,15 @@ function missionSelect(mType) {
   if (active) { source += ".png" }
   else { source += "enabled.png" }
   button.src = source
-
+  
   // check if no missions are enabled
 
- var otherMission = "complex"
+ var otherMission = "complex";
  if (type == "complex") { otherMission = "simple" }
  var otherButton = document.getElementById(otherMission + "mission");
+
+ localStorage.setItem("missionTypes", !active + ";" + otherButton.src.includes("enabled")); //save data
+
  if (otherButton.src.includes("enabled") || !active) { return }
  missionSelect(false) // enable simple 
 }
