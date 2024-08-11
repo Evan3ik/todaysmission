@@ -53,4 +53,25 @@
 
 .content {
     background-color: #FAFAFA;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.center {
+  text-align: center;
+  position: center;
+}
+
+.generate {
+    background-color: #3A50BB;
+    width: 80%;
+    height: 40px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.generate:hover {
+ background-color: #000786;
 }
