@@ -125,4 +125,5 @@ function acceptMission() {
   else {pastMissions = pastMissions.split(";")}
   pastMissions.push(localStorage.getItem("todaysMission"))
   localStorage.setItem("pastMissions", pastMissions.join(";"))
+  window.onload()
 }
