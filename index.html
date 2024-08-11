@@ -7,6 +7,7 @@
 <title id="title">Today's Mission</title>
 <link rel="shortcut icon" href="images/todaysmission.ico" type="image/x-icon"> 
 <link href="stylesheet.css" rel="stylesheet" type="text/css">
+<script src="script.js"></script>
 </head>
 <body>
 
@@ -17,11 +18,27 @@
             <img src="https://evan3ik.github.io/todaysmission/images/todaysmission.png" />
         </div>
         <h1 style="color: #FFFFFF; font-size: 64px"><b>Today's Mission</b></h1>
-    </div>
+</div>
 
+<br>
 <div class="content">
 
-<p>Pingas!<p><br>
+<h1 style="text-align: center; font-size: 50px; border-bottom: 5px solid #000786;">GENERATE A MISSION</h1><br>
+
+
+<p class="center">Simple Missions are those that can be completed anytime, while complex ones require an Object or more preperation.</p>
+
+<div class="center">
+
+<button onclick="missionSelect(false)"  id="missionbutton"><img id="simplemission" style="width:80%;height:80%" src="https://evan3ik.github.io/todaysmission/images/simplemissionenabled.png"</img></button>
+
+<button onclick="missionSelect(true)"  id="missionbutton" ><img  id="complexmission" style="width:80%;height:80%" src="https://evan3ik.github.io/todaysmission/images/complexmissionenabled.png"</img></button>
+
+
+<br><br>
+<input class="generate" type="submit" value="GENERATE">
+
+</div>
 
 </div>
   
