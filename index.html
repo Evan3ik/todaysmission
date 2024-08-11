@@ -26,29 +26,50 @@
 <br>
 <div class="content">
 
-<h1 style="text-align: center; font-size: 50px; border-bottom: 5px solid #000786;">GENERATE A MISSION</h1><br>
+<h1 style="text-align: center; font-size: 40px;" id="currentday">JANUARY 13</h1>
+<h1 style="text-align: center; font-size: 50px; border-bottom: 5px solid #000786;" id="header">GENERATE A MISSION</h1>
 
-
+<div class="center" id="missionComps" style="display:block">
+<br>
 <p class="center">Simple Missions are those that can be completed anytime, while complex ones require an Object or more preperation.</p>
-
-<div class="center">
-
+  
 <button onclick="missionSelect(false)"  id="missionbutton"><img id="simplemission" style="width:80%;height:80%" src="https://evan3ik.github.io/todaysmission/images/simplemissionenabled.png"</img></button>
 
 <button onclick="missionSelect(true)"  id="missionbutton" ><img  id="complexmission" style="width:80%;height:80%" src="https://evan3ik.github.io/todaysmission/images/complexmissionenabled.png"</img></button>
 
 
 <br><br>
-<input class="generate" type="submit" value="GENERATE">
+<input class="generate" onclick="generate()" type="submit" value="GENERATE">
 
 </div>
+
+
+
+<div class="center" id="missionGenerate" style="display:none">
+<br>
+<p style="font-size:35px" class="center">Generating Mission...</p>
+
+<img src="https://evan3ik.github.io/todaysmission/images/loadingbar.png" class="loadingbar"></img>
+
+
+<p style="font-size:25px;color: #515151;" id="statustext">Starting up the mission system...</p>
+  
+</div>
+
+<div class="center" id="todaysMission" style="display:none">
+
+<p style="font-size:40px;opacity:0" class="center" id="mission"><b>See how many marbles you can shove up your ass.</b></p>
+
+  
+</div>
+
 
 </div>
   
 
 <div class="footer">
-   <h1 style="color: #FFFF; text-align: center;">TODAY'S MISSION 2024</h1>
-        <p >Today's Mission concept goes to @FREAKBAIT. This site created by Eest Software (Property of the Silenceman). We also want to thank Randal Munroe for creating XKCD #1988, its a good policy for us to use at the bottom of this page.</p> 
+   <h1 style="color: #FFFF; text-align: center;" id="thisyear">TODAY'S MISSION 2024</h1>
+        <p >This site is property Eest Software (Managed by  the Silenceman) Contact us at eestsoftware@gmail.com . Today's Mission concept goes to @FREAKBAIT. We also want to thank Randal Munroe for creating XKCD #1988, its a good policy for us to use at the bottom of this page.</p> 
 <p> This site uses COOKIES to store completed missions. Nothing more. About personal data: Please don't send us your personal information. We do not want your personal information. We have a hard enough time keeping track of our own personal information, let alone yours. This website places pixels on your screen in order to form text and images, some of which may remain in your memory after you close the page.  </p>
     </div>
 
