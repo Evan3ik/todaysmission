@@ -1,3 +1,4 @@
+
 *{
 	image-rendering: crisp-edges;
 }
@@ -83,4 +84,16 @@
 
 #missionbutton:hover {
   background-color: #A6A6A6; 
+}
+
+.loadingbar{
+  text-align: center;
+  animation: spin 2s infinite linear;
+}
+
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
 }
